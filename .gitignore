@@ -7,10 +7,7 @@
 
 # Arquivo full
 .tmp
-measurements1M.txt
-measurements10M.txt
-measurements100M.txt
-measurements.txt
+measurements*
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
