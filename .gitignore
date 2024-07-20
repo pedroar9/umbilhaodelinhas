@@ -3,6 +3,7 @@
 
 # Arquivo full
 .DS_Store
+.vscode/
 
 # Arquivo full
 .tmp
