@@ -23,7 +23,7 @@ def build_weather_station_name_list():
     Grabs the weather station names from example data provided in repo and dedups
     """
     station_names = []
-    with open('./data/weather_stations.csv', 'r', encoding="utf-8") as file:
+    with open('data/wather_stations.csv', 'r', encoding="utf-8") as file:
         file_contents = file.read()
     for station in file_contents.splitlines():
         if "#" in station:
@@ -123,7 +123,7 @@ def main():
     """
     main program function
     """
-    num_rows_to_create = 1000000
+    num_rows_to_create = 1_000_000
     weather_station_names = []
     weather_station_names = build_weather_station_name_list()
     print(estimate_file_size(weather_station_names, num_rows_to_create))
