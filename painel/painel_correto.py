@@ -11,8 +11,8 @@ def load_data():
 
 # Função principal para criar o dashboard
 def main():
-    st.title("Weather Station Summary")
-    st.write("This dashboard shows the summary of weather station data including minimum, mean, and maximum temperatures.")
+    st.title("Resumo da estação meteorológica")
+    st.write("Este painel mostra o resumo dos dados da estação meteorológica, incluindo temperaturas mínimas, médias e máximas.")
 
     # Carregar os dados
     data = load_data()
