@@ -17,4 +17,4 @@ if __name__ == "__main__":
     start_time = time.time()
     create_duckdb()
     took = time.time() - start_time
-    print(f"Duckdb Took: {took:.2f} sec")
+    print(f"Duckdb Decolou: {took:.2f} sec")
