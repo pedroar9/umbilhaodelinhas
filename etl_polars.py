@@ -32,4 +32,4 @@ if __name__ == "__main__":
     df = create_polars_df()
     took = time.time() - start_time
     print(df)
-    print(f"Polars Took: {took:.2f} sec")
+    print(f"Polars demorou: {took:.2f} sec")
