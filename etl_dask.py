@@ -29,4 +29,4 @@ if __name__ == "__main__":
     took = time.time() - start_time
 
     print(result_df)
-    print(f"Dask Decolou: {took:.2f} sec")
+    print(f"Dask processou em: {took:.2f} sec")
