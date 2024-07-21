@@ -24,6 +24,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.python-version
 build/
 develop-eggs/
 dist/
@@ -164,6 +165,8 @@ cython_debug/
 ### Python Patch ###
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
 poetry.toml
+pyproject.toml
+poetry.lock
 
 # ruff
 .ruff_cache/
