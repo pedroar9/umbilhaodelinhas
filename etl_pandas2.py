@@ -1,9 +1,13 @@
+import os
 import pandas as pd
 import time
 
 start_time = time.time()
+# Usando os.path.join para garantir compatibilidade entre sistemas operacionais
+PATH_DO_TXT = os.path.join("data", "measurements.txt")
 
-file_path = 'data/measurements.txt'
+# Atribui o valor de PATH_DO_TXT para file_path
+file_path = PATH_DO_TXT
 
 # Especificar os tipos de dados ao ler o arquivo CSV
 dtype = {

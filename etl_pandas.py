@@ -1,12 +1,17 @@
+import os
 import pandas as pd
 from multiprocessing import Pool, cpu_count
 from tqdm import tqdm  # importa o tqdm para barra de progresso
 
 CONCURRENCY = cpu_count()
 
+# Usando os.path.join para garantir compatibilidade entre sistemas operacionais
+PATH_DO_TXT = os.path.join("data", "measurements.txt")
+
 total_linhas = 1_000_000_000  # Total de linhas conhecido
 chunksize = 100_000_000  # Define o tamanho do chunk
-filename = "data/measurements.txt"  # Certifique-se de que este é o caminho correto para o arquivo
+# Atribui o valor de PATH_DO_TXT para filename
+filename = PATH_DO_TXT
 
 def process_chunk(chunk):
     # Agrega os dados dentro do chunk usando Pandas
