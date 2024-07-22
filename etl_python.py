@@ -1,10 +1,13 @@
+import os
 from csv import reader
 from collections import defaultdict
 import time
 
 from pathlib import Path
 
-PATH_DO_TXT = "data\measurements.txt"
+# PATH_DO_TXT = "data\measurements.txt"
+# Usando os.path.join para garantir compatibilidade entre sistemas operacionais
+PATH_DO_TXT = os.path.join("data", "measurements.txt")
 
 def processar_temperaturas(path_do_txt: Path):
     print("Iniciando o processamento do arquivo.")
@@ -43,6 +46,6 @@ def processar_temperaturas(path_do_txt: Path):
 
 # Substitua "data/measurements10M.txt" pelo caminho correto do seu arquivo
 if __name__ == "__main__": ### if load == load
-    path_do_txt: Path = Path("data/measurements.txt")
+    PATH_DO_TXT = os.path.join("data", "measurements.txt")
     # 100M > 5 minutos.
-    resultados = processar_temperaturas(path_do_txt)
+    resultados = processar_temperaturas(PATH_DO_TXT)
